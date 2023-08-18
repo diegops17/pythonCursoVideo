@@ -4,8 +4,7 @@ distanciaViagem = float(input('Informe a distância da viagem em Km: '))
 if distanciaViagem <= 200:
     valorKm = 0.50
     valorPassagem = valorKm * distanciaViagem
-    print(f'R$ {valorKm} por Km\nValor passagem R$ {valorPassagem:.2f}')
 else:
     valorKm = 0.45
     valorPassagem = valorKm * distanciaViagem
-    print(f'R$ {valorKm} por Km\nValor passagem R$ {valorPassagem:.2f}')
+print(f'R$ {valorKm} por Km\nValor passagem R$ {valorPassagem:.2f}')
