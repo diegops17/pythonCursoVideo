@@ -1,5 +1,5 @@
-#Faça um script que leia algo pelo teclado e mostre na tela
-# o seu tipo primitivo e todas as informações possíveis sobre ele.
+"""Faça um script que leia algo pelo teclado e mostre na tela
+o seu tipo primitivo e todas as informações possíveis sobre ele."""
 captura = input('Digite algo: ')
 print(type(captura))
 print(f'É númerico? {captura.isnumeric()}')

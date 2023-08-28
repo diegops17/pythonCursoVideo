@@ -1,5 +1,4 @@
-"""
-Faça um script que leia dois números inteiros e comparare-os, mostrando na tela uma mensagem:
+"""Faça um script que leia dois números inteiros e comparare-os, mostrando na tela uma mensagem:
 -O primeiro valor é maior, -O segundo valor é maior, -Não existe valor maior, -Os dois são iguais
 """
 n1 = int(input('Informe o primeiro número inteiro: '))

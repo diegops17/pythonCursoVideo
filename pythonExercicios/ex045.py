@@ -4,9 +4,9 @@ from time import sleep
 escolhaHumano = str(input('Escolha PEDRA, PAPEL OU TESOURA: ')).strip().upper()
 escolhaComputador = choice(['PEDRA', 'PAPEL', 'TESOURA'])
 
-print('JO..'), sleep(2)
-print('KEN..'), sleep(2)
-print('JO..KEN..PÔ'), sleep(1)
+print('JO..'), sleep(0.5)
+print('KEN..'), sleep(0.5)
+print('JOKENPÔ'), sleep(0.5)
 print('-'*30)
 if ((escolhaHumano == 'PEDRA' and escolhaComputador == 'TESOURA')
         or (escolhaHumano == 'TESOURA' and escolhaComputador == 'PAPEL')
@@ -19,3 +19,4 @@ elif ((escolhaHumano == 'PEDRA' and escolhaComputador == 'PEDRA')
     print(f'EMPATE!\nVOCÊ: {escolhaHumano} X PC: {escolhaComputador}')
 else:
     print(f'VOCÊ PERDEU!\nVOCÊ: {escolhaHumano} X PC: {escolhaComputador}')
+print('-'*30)
