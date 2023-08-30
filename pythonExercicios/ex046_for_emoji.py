@@ -1,4 +1,4 @@
-"""046 - Faça um script que mostre uma contagem regressiva para o estouro de fogos de artifício,
+"""Faça um script que mostre uma contagem regressiva para o estouro de fogos de artifício,
 indo de 10 até 0, com uma pausa de 1 segundo entre elas"""
 from time import sleep
 from emoji import emojize
