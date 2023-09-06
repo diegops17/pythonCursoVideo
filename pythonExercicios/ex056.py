@@ -7,9 +7,10 @@ contMulheresMenor20 = 0
 homemMaisVelho = ' '
 idadeMaiorHomem = 0
 for i in range(1, 4+1):
-    nome = str(input(f'Informe o nome da {i}º pessoa: ')).upper().strip()
-    idade = int(input(f'Informe a idade da {i}º pessoa: '))
-    sexo = str(input(f'Informe o sexo [F OU M] DA {i}º pessoa: '))[0].upper().strip()
+    print(f'-----{i}º Pessoa-----')
+    nome = str(input(f'Nome: ')).upper().strip()
+    idade = int(input(f'Idade: '))
+    sexo = str(input(f'Sexo [F OU M]: '))[0].upper().strip()
     cont += 1
     somaIdades += idade
     mediaIdadeGrupo = somaIdades / cont
