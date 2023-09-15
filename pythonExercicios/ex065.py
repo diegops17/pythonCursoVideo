@@ -1,11 +1,7 @@
 """Crie um programa que leia vários números inteiros pelo teclado. No final da execução mostre:
 a média entre todos os valores e qual foi o maior e o menor valores lidos. O programa deve perguntar
 se ele quer ou não continuar a digitar valores"""
-soma = 0
-maior = 0
-menor = 0
-cont = 0
-media = 0
+soma = maior = menor = cont = media = 0
 op = ''
 while op != 'N':
     num = int(input('Informe um número inteiro: '))
