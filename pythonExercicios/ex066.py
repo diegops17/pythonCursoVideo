@@ -2,7 +2,7 @@
 quando o usuário digitar 999, que é a condição de parada. No final mostre quantos números
 foram digitados e qual foi a soma entre eles desconsiderando o flag"""
 soma = cont = num = 0
-while num != 999:
+while True:
     num = int(input('informe um número inteiro [999] para parar: '))
     if num == 999:
         break
