@@ -3,9 +3,8 @@ deverá perguntar se o usuário quer continuar. No final mostrar: Quantas pessoa
 Quantos homens foram cadastrados. Quantas mulheres tem menos de 20 anos"""
 totalPessoasMaior18 = contHomens = contMulheresMenor20 = 0
 while True:
-    opcao = ''
+    opcao = sexo = ' '
     idade = int(input('idade: '))
-    sexo = str(input('Sexo: [M/F] '))[0].upper().strip()
     while sexo not in 'MF':
         sexo = str(input('Sexo: [M/F] '))[0].upper().strip()
 
@@ -17,15 +16,11 @@ while True:
         contMulheresMenor20 += 1
 
     print('-'*30)
-    while opcao != 'S':
+    while opcao not in 'SN':
         opcao = str(input('Quer continuar? [S/N] '))[0].upper().strip()
-
-        if opcao == 'N':
-            break
     if opcao == 'N':
-        break
-
+         break
 print('===== FIM DO PROGRAMA =====')
 print(f'Total de pessoas com mais de 18 anos: {totalPessoasMaior18}')
 print(f'Ao todo temos {contHomens} homens cadastrados')
-print(f'Total de {contMulheresMenor20} mulheres com menos de 20 anos')
+print(f'Total de {contMulheresMenor20} mulher(es) com menos de 20 anos')

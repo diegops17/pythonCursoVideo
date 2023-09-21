@@ -1,10 +1,12 @@
 """Faça um script que jogue par ou impar com o computador. O jogo só será interrompido quando
-o jogador perder, mostrando no final o total de vitórias consecutivas que ele conquistou no final do jogo"""
+o jogador perder, mos  mostrando no final o total de vitórias consecutivas que ele conquistou no final do jogo"""
 from random import randint
 totalVitorias = 0
 while True:
     valorJogador = int(input('Diga um valor: '))
-    parImparJogador = str(input('Par ou Ímpar [P/I]: '))[0].strip().upper()
+    parImparJogador = ' '
+    while parImparJogador not in 'PI':
+        parImparJogador = str(input('Par ou Ímpar [P/I]: '))[0].strip().upper()
     valorComputador = randint(0, 10)
     parImpar = ''
     soma = valorJogador + valorComputador
