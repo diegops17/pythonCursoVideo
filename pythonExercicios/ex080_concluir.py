@@ -3,11 +3,15 @@ já na posição correta de inserção sem usar o sort(), no final mostre a list
 numeros = []
 for i in range(0, 5):
     num = int(input('Digite um valor: '))
-    if i == 0:
+    if i == 0 or num > numeros[-1]:
         numeros.append(num)
+        print(f'{num}. Foi adicionado no final da lista')
     else:
-        if numeros[i] < num:
-            numeros.insert(numeros[i], num)
-            print(f'Adicionado na posição {numeros[i]} da lista')
-
+        p = 0
+        while p < len(numeros):
+            if num <= numeros[p]:
+                numeros.insert(p, num)
+                print(f'{num}. Foi adicionado na posição {p} da lista')
+                break
+            p += 1
 print(numeros)

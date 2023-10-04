@@ -5,13 +5,11 @@ numeros = []
 while True:
     opcao = ' '
     num = int(input('Digite um valor: '))
-
     if num not in numeros:
         numeros.append(num)
         print('Valor adicionado com sucesso...')
     else:
         print('valor duplicado! não vou adicionar')
-
     while opcao not in 'NS':
         opcao = str(input('Quer continuar? [S/N]: '))[0].strip().upper()
     if opcao == 'N':

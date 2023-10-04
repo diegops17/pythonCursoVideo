@@ -7,12 +7,9 @@ impares = []
 while True:
     opcao = ' '
     num = int(input('Digite um valor: '))
-
     numeros.append(num)
-
     while opcao not in 'SN':
         opcao = str(input('Quer continuar? [S/N]: '))[0].strip().upper()
-
     if opcao == 'N':
         break
 for i in numeros:
