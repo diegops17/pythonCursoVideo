@@ -1,4 +1,5 @@
-"""Faça um script que leia o peso de cinco pessoas. No final mostre qual foi o maior e o menos peso lidos."""
+"""Faça um script que leia o peso de cinco pessoas.
+No final mostre qual foi o maior e o menos peso lidos."""
 listaPesos = []
 for i in range(1, 5+1):
     peso = float(input(f'Informe o {i}º peso: '))
