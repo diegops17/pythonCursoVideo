@@ -8,15 +8,13 @@ for i in range(0, 3):
     for j in range(0, 3):
         num = int(input(f'Digite um valor para [{i}, {j}]: '))
         numeros[i].append(num)
-#print(numeros)
 for n in numeros:
     print('')
     for j in n:
-        print(f'[{j:^4}]', end=' ')
+        print(f'[{j:^5}]', end=' ')
 print('\n')
 print('-='*30)
 for n in numeros:
-    p = 1
     for j in n:
         if j % 2 == 0:
             somaPares += j
@@ -25,7 +23,6 @@ print(f'A soma dos valores pares é {somaPares}')
 print(f'A soma dos valores da terceira coluna é {somaTerceiraColuna}.')
 
 for i in range(len(numeros[1])):
-    #print(numeros[1])
     if i == 0:
         maiorValorSegundaLinha = numeros[1][i]
     else:
