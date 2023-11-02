@@ -12,7 +12,7 @@ cadastro['ctps'] = int(input('Carteira de Trabalho (0 não tem): '))
 if cadastro['ctps'] != 0:
     cadastro['contratacao'] = int(input('Ano de contratação: '))
     cadastro['salario'] = float(input('Salário R$ '))
-    idadeApontadoria = (anoAtual - cadastro['contratacao']) + cadastro['idade']
+    idadeApontadoria = cadastro['idade'] + ((cadastro['contratacao'] + 35) - anoAtual)
     cadastro['aposentadoria'] = idadeApontadoria
 print('-=' * 30)
 print(cadastro)
