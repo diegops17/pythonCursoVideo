@@ -15,12 +15,17 @@ while True:
 
     while sexo not in 'MF':
         sexo = str(input('Sexo: [M/F]: '))[0].upper().strip()
-        pessoa['sexo'] = sexo
+        if sexo not in 'MF':
+            print('ERRO! Digite M ou F')
+        else:
+            pessoa['sexo'] = sexo
 
     pessoas.append(pessoa.copy())
 
     while opcao not in 'SN':
         opcao = str(input('Quer continuar [S/N]? '))[0].upper().strip()
+        if sexo not in 'SN':
+            print('ERRO! Digite S ou N')
     if opcao == 'N':
         break
 print('-=' * 20)
