@@ -1,20 +1,22 @@
-'''Faça um script que tenha uma função chamada maior(), que receba vários parametros com valores inteiros
+"""Faça um script que tenha uma função chamada maior(), que receba vários parametros com valores inteiros
 Analise todos os valores e dizer qual o maior
-'''
+"""
+
+
 def maior(*numeros):
-    contador = maior = 0
+    contador = maior_numero = 0
     print('Analisando os valores passados...')
     for numero in numeros:
         print(numero, end=' ')
         contador += 1
 
         if contador == 0:
-            maior = numero
+            maior_numero = numero
         else:
-            if numero > maior:
-                maior = numero
+            if numero > maior_numero:
+                maior_numero = numero
     print(f'foram informados {contador} valores ao todo.', end=' \n')
-    print(f'O maior valor informado foi {maior}.')
+    print(f'O maior valor informado foi {maior_numero}.')
     print('-=' * 30)
 
 
