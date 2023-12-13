@@ -21,4 +21,5 @@ def fatorial(num, show=False):
 
 #help(fatorial)
 fatorial(5, True)
+fatorial(5)
 

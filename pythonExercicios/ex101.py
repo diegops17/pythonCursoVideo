@@ -4,6 +4,7 @@ from datetime import date
 
 
 def voto(ano_nascimento):
+    #from datetime import date
     ano_atual = date.today().year
     idade = ano_atual - ano_nascimento
     resultado = ''
