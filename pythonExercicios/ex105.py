@@ -1,9 +1,12 @@
 def notas(*num, situacao=False):
     dicionario = {}
-    maior = menor = soma = media = contador = 0
+    #maior = menor = soma = media = contador = 0
     dicionario['total'] = len(num)
+    dicionario['maior'] = max(num)
+    dicionario['menor'] = min(num)
+    dicionario['media'] = sum(num) / len(num)
 
-    for n in num:
+    '''for n in num:
         soma += n
 
         if contador == 0:
@@ -14,22 +17,22 @@ def notas(*num, situacao=False):
                 maior = n
             elif n < menor:
                 menor = n
-        contador += 1
+        contador += 1 
     dicionario['maior'] = maior
     dicionario['menor'] = menor
 
     if num == 0:
         num = 1
-    media = soma / len(num)
+    media = soma / len(num)'''
 
 
-    if media <= 4:
+    if dicionario['media'] <= 4:
         sit = 'RUIM'
-    elif media <= 6.5:
+    elif dicionario['media'] <= 6.5:
         sit = 'RAZOAVEL'
     else:
         sit = 'BOA'
-    dicionario['media'] = f'{media:.1f}'
+    dicionario['media'] = f'{dicionario["media"]:.1f}'
     if situacao == True:
         dicionario['situacao'] = sit
 
